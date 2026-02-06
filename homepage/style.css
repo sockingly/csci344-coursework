@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+    font-family: 'SN Pro', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+a.github-link {
+    font-size: 25px;
+    color: #1c469f;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+a.github-link:hover {
+    color: #333 !important;
+    text-decoration: underline !important;
+}
