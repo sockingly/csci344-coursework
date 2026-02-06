@@ -2,41 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Sofia's Coursework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Times!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #327074;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+    </style>
 </head>
 
 <body>
-     <h1>Hello! This is the Heading!</h1>
 
-    <p>
-        This is paragraph totally paragraphing.
-    </p>
+    <header>
+        <h1>Sofia's Coursework</h1>
+    </header>
 
-    <img
-    src="https://animalwelfaresociety.org/wp-content/uploads/2025/03/awsmaine_peachesDOG_0325-scaled-e1742240776863-1024x1024.jpg"
-    alt="cute dog" 
-    style="width:300px;height:300px;"/>
+    <main>
+        <p><a href="https://github.com/sockingly/csci344-coursework" class="github-link" target="_blank">Link to Github</a></p>    
 
-    <img
-    src="https://pyxis.nymag.com/v1/imgs/6af/f82/342c1853c57a59710f3f6c999e2f937705-20-feathers1.2x.rhorizontal.w700.jpg"
-    alt="feathers mcgraw"
-    style="width:450px;height:300px;"/>
+        <section id="inClass">
+            <h2>In-Class Exercises</h2>
+            <ul>
+                <li><a href="cs/assignment1.html">My First Webpage (1/21)</a></li>
+            </ul>
+        </section>
 
-    <img
-    src="https://static01.nyt.com/images/2022/02/20/multimedia/20xp-bear/20xp-bear-superJumbo.jpg"
-    alt="hank the tank"
-    style="width:300px;height:414px;"/>
+        <section id="tuts">
+            <h2>Tutorials</h2>
+            <ul>
+                <li><a href="psych/experiment.html">Experiment Report</a></li>
+                <li><a href="psych/results.html">Results Analysis</a></li>
+            </ul>
+        </section>
 
-    <br>
-    Ordered List:
-    <ol>
-        <li>First thing on list!</li>
-        <li>Second thing on list!</li>
-        <li>Third thing on list!</li>
-    </ol>
+        <section id="hw">
+            <h2>Homework</h2>
+            <ul>
+                <li><a href="hum/philosophy-paper.html">Philosophy Paper</a></li>
+                <li><a href="hum/religion-essay.html">Religion Essay</a></li>
+            </ul>
+        </section>
 
-    Here is the next page: <a href="page2.html"> PAGE 2</a>
+    </main>
 </body>
 </html>
