@@ -1,24 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Fixed Navigation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Photo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+    <!-- top section / header obv -->
+    <header class="top-nav">
+        <h1 class="logo">Photo App</h1>    
+        <nav>
+            <span class="username">average_profile</span>
+            <button class="btn-sign-out">Sign Out</button>
+        </nav>
+    </header>   
+    
+    <main>
+        <section class="news-feed">
+            <!-- stories and such -->
+            <header class="stories-panel">
+                <div class="story">
+                    <img src="https://picsum.photos/60?random=10" alt="user story">
+                    <p>frank_the_tank</p>
+                </div>
+                <div class="story">
+                    <img src="https://picsum.photos/60?random=11" alt="user story">
+                    <p>hank_the_tank</p>
+                </div>
+                <div class="story">
+                    <img src="https://picsum.photos/60?random=12" alt="user story">
+                    <p>bank_the_tank</p>
+                </div>
+                <div class="story">
+                    <img src="https://picsum.photos/60?random=13" alt="user story">
+                    <p>crank_the_tank</p>
+                </div>
+                <div class="story">
+                    <img src="https://picsum.photos/60?random=14" alt="user story">
+                    <p>tank_the_tank</p>
+                </div>
+            </header>
 
-    <nav>
-        <h1><a href="#home">Photo App</a></h1>
+            <!-- cards -->
+             <!-- post one! (cool guys) -->
+            <section class="card">
+                <header class="card-header">
+                    <strong>coolest_guy</strong>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/600/600?random=21" class="main-img" alt="Post">
+                <div class="card-buttons">
+                    <div class="left-btns">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="card-content">
+                    <p><strong>1,234 likes</strong></p>
+                    <p><strong>coolest_guy</strong> So THIS happened. <a href="#">more</a></p>
+                    <div class="comments">
+                        <p><strong>cool_guy</strong> I can't believe THAT happened! </p>
+                        <p><strong>cooler_guy</strong> I was there when THIS happened.</p>
+                    </div>
+                </div>
 
-        <ul>
-            <li><a href="#bio">gibsonjack</a></li>
-            <li><a href="#portfolio">Sign Out</a></li>
-        </ul>
-    </nav>
+                <div class="post-date">
+                    <p>2 DAYS AGO</p>
+                </div>
 
+                <div class="add-comment">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <button class="post-link">Post</button>
+                </div>
+            </section>
+            
+            <!-- post two! (love guy) -->
+            <section class="card">
+                <header class="card-header">
+                    <strong>love_guy</strong>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/600/600?random=22" class="main-img" alt="Post">
+                <div class="card-buttons">
+                    <div class="left-btns">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="card-content">
+                    <p><strong>7 likes</strong></p>
+                    <p><strong>love_guy</strong> I LOVE photos! <a href="#">more</a></p>
+                </div>
+
+                <div class="post-date">
+                    <p>5 DAYS AGO</p>
+                </div>
+
+                <div class="add-comment">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <button class="post-link">Post</button>
+                </div>
+            </section>
+
+            <!-- post three! (hate guy) -->
+            <section class="card">
+                <header class="card-header">
+                    <strong>hate_guy</strong>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/600/600?random=23" class="main-img" alt="Post">
+                <div class="card-buttons">
+                    <div class="left-btns">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="card-content">
+                    <p><strong>1,000 likes</strong></p>
+                    <p><strong>hate_guy</strong> I HATE photos! <a href="#">more</a></p>
+                </div>
+
+                <div class="post-date">
+                    <p>4 DAYS AGO</p>
+                </div>
+
+                <div class="add-comment">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <button class="post-link">Post</button>
+                </div>
+            </section>
+            
+            <!-- post four! (neutral guy) -->
+            <section class="card">
+                <header class="card-header">
+                    <strong>neutral_guy</strong>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </header>
+                <img src="https://picsum.photos/600/600?random=24" class="main-img" alt="Post">
+                <div class="card-buttons">
+                    <div class="left-btns">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="card-content">
+                    <p><strong>5,432 likes</strong></p>
+                    <p><strong>neutral_guy</strong> I am NEUTRAL about photos. <a href="#">more</a></p>
+                </div>
+
+                <div class="post-date">
+                    <p>3 DAYS AGO</p>
+                </div>
+
+                <div class="add-comment">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <input type="text" placeholder="Add a comment...">
+                    <button class="post-link">Post</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- current user obv -->
+        <aside>
+            <header class="current-user">
+                <img src="https://picsum.photos/50" alt="profile pic">
+                <div class="user-names">
+                    <strong>average_profile</strong>
+                    <p>Average Name</p>
+                </div>
+            </header>
+
+            <!-- suggested users -->
+            <section class="suggestions">
+                <div class="suggestion-header">
+                    <span>Suggestions for you</span>
+                    <button class="link-btn">See All</button>
+                </div>
+
+                <div class="suggestion-container">
+                    <img src="https://picsum.photos/40?random=1" alt="suggested user">
+                    <div class="suggestion-text">
+                        <strong>not_very_cool_guy</strong>
+                        <p>Suggested for you</p>
+                    </div>
+                    <a href="#" class="follow-link">follow</a>
+                </div>
+                
+                <div class="suggestion-container">
+                    <img src="https://picsum.photos/40?random=2" alt="suggested user">
+                    <div class="suggestion-text">
+                        <strong>too_cool_guy</strong>
+                        <p>Suggested for you</p>
+                    </div>
+                    <a href="#" class="follow-link">follow</a>
+                </div>
+            </section>
+        </aside>
+    </main>
 </body>
-
 </html>

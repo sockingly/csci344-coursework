@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* setting main stuff */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* font for main */
+h1, h2, .logo, strong, .stories-panel p {
+    font-family: "Comfortaa", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.top-nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 10%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* stories and such */
+.stories-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    gap: 20px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow-x: auto; 
+    width: 600px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+}
+
+.story img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 0, 170);
+    padding: 2px;
+    object-fit: cover;
+}
+
+.story p {
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.news-feed {
+    width: 600px;
+}
+
+/* card stuff */
+.card {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.main-img {
+    width: 100%;
+    display: block;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+}
+
+.left-btns i {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 0 15px 15px 15px;
+}
+
+.post-date{
+    font-size: 15px;
+    margin-left: 20px;
+    color: rgb(179, 178, 178);
+}
+
+/* adding comment and such */
+.add-comment {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #efefef;
+    padding: 15px;
+    gap: 10px;
+}
+
+.add-comment input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+/* comment post button */
+.post-link {
+    color: #0095f6;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* sticky side panel */
+aside {
+    width: 300px;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+/* user's info and pic */
+.current-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.current-user img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+/* suggested */
+.suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #8e8e8e;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.suggestion-container {
+    display: grid;
+    grid-template-columns: 50px auto 60px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.suggestion-container img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+/* click to follow link for the suggested users */
+.follow-link {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    aside {
+        display: none;
+    }
+    
+    .news-feed, .stories-panel, .card {
+        width: 100%;
+    }
+
+    main {
+        padding: 0;
+        margin-top: 80px;
+    }
+}
+
+/* sign out button */
+.btn-sign-out {
+    background: none;
+    border: 1px solid #dbdbdb;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* button styling */
+.link-btn {
+    background: none;
+    border: none;
+    font-weight: 1000px;
+    cursor: pointer;
+}
