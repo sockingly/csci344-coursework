@@ -1,0 +1,15 @@
+const students = [
+    { name: "Alice", age: 20, grade: 85, major: "Computer Science" },
+    { name: "Bob", age: 21, grade: 92, major: "Mathematics" },
+    { name: "Charlie", age: 19, grade: 78, major: "Computer Science" },
+    { name: "Diana", age: 22, grade: 95, major: "Physics" },
+    { name: "Eve", age: 20, grade: 88, major: "Computer Science" }
+];
+
+//filter and map
+//const names = students.map((item) => item.name);
+//console.log(names);
+
+const compSci = students.filter(item => item.major == "Computer Science" && item.grade >= 85)
+const names = compSci.map(item => item.name);
+console.log(names);
