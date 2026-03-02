@@ -53,12 +53,12 @@ console.log(ProdList);
 //4. render products
 function renderProducts()
 {
-    ProdList.innerHTML = '';
+    const productGridEl = document.querySelector("#productGrid")
+    productGridEl.innerHTML = '';
     for (let i = 0; i < products.length; i++)
     {
-        createProductCard(products[i]);
         const listItemHTML = createProductCard(products[i]);
-        ProdList.insertAdjacentHTML('beforeend', listItemHTML);
+        productGridEl.insertAdjacentHTML('beforeend', listItemHTML);
     }
 }
 
@@ -67,7 +67,33 @@ function addItemToList(event) {
   // Prevent the default form submission behavior (which would reload the page)
   event.preventDefault();
   // TODO: Add your code here
+  console.log("form clicked!");
+  const productName = document.querySelector('#productName');
+  const productPrice = document.querySelector('#productPrice');
+  const productDesc = document.querySelector('#productDescription');
+  const productCate = document.querySelector('#productCategory');
+  const productStock = document.querySelector('#productInStock');
+
+  //create new obj
+  const newProduct =
+  {
+    name: productName.value,
+    price: Number(productPrice.value),
+    description: productDesc.value,
+    category: productCate.value,
+    inStock: productStock.checked
+  };
   
+  console.log(newProduct);
+
+  //append new obj
+  products.push(newProduct);
+
+  //clear form
+  document.querySelector("#productForm").reset();
+
+  renderProducts();
 }
 
-productForm.addEventListener('submit', addItemToList);
+const productForm = document.querySelector("#productForm");
+productForm.addEventListener("submit", addItemToList);
